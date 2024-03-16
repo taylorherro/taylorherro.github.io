@@ -24,7 +24,7 @@
 <meta property="og:description" content="STL的用法 方便自己回看">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-02T11:31:23.000Z">
-<meta property="article:modified_time" content="2024-03-10T13:29:52.030Z">
+<meta property="article:modified_time" content="2024-03-13T05:40:06.645Z">
 <meta property="article:author" content="difu">
 <meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          991 字
+          1.1k 字
         
       </span>
     
@@ -236,7 +236,7 @@
         
         
         
-          9 分钟
+          10 分钟
         
       </span>
     
@@ -325,21 +325,16 @@
 <p>sla在实现哈夫曼树算法时有妙用，感觉应该也有其他用处sla</p>
 <h1 id="4-string字符串"><a href="#4-string字符串" class="headerlink" title="4 string字符串"></a>4 string字符串</h1><p>$\vec{a}$<br>字符串string是一个字符串类，和char型字符串类似。<br>可以把string理解为一个字符串类型，像int一样可以定义  </p>
 <h2 id="1-1-初始化及定义"><a href="#1-1-初始化及定义" class="headerlink" title="1.1 初始化及定义"></a>1.1 初始化及定义</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">//头文件</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string&gt;</span></span><br><br><span class="hljs-comment">//1.</span><br>string str1; <span class="hljs-comment">//生成空字符串</span><br><br><span class="hljs-comment">//2.</span><br><span class="hljs-function">string <span class="hljs-title">str2</span><span class="hljs-params">(<span class="hljs-string">&quot;123456789&quot;</span>)</span></span>; <span class="hljs-comment">//生成&quot;1234456789&quot;的复制品 </span><br><br><span class="hljs-comment">//3.</span><br><span class="hljs-function">string <span class="hljs-title">str3</span><span class="hljs-params">(<span class="hljs-string">&quot;12345&quot;</span>, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>)</span></span>;<span class="hljs-comment">//结果为&quot;123&quot; ，从0位置开始，长度为3</span><br><br><span class="hljs-comment">//4.</span><br><span class="hljs-function">string <span class="hljs-title">str4</span><span class="hljs-params">(<span class="hljs-string">&quot;123456&quot;</span>, <span class="hljs-number">5</span>)</span></span>; <span class="hljs-comment">//结果为&quot;12345&quot; ，长度为5</span><br><br><span class="hljs-comment">//5.</span><br><span class="hljs-function">string <span class="hljs-title">str5</span><span class="hljs-params">(<span class="hljs-number">5</span>, <span class="hljs-string">&#x27;2&#x27;</span>)</span></span>; <span class="hljs-comment">//结果为&quot;22222&quot; ,构造5个字符&#x27;2&#x27;连接而成的字符串</span><br><br><span class="hljs-comment">//6.</span><br><span class="hljs-function">string <span class="hljs-title">str6</span><span class="hljs-params">(str2, <span class="hljs-number">2</span>)</span></span>; <span class="hljs-comment">//结果为&quot;3456789&quot;，截取第三个元素（2对应第三位）到最后</span><br></code></pre></td></tr></table></figure>
-<h2 id="1-2-函数方法-1"><a href="#1-2-函数方法-1" class="headerlink" title="1.2 函数方法"></a>1.2 函数方法</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><br></code></pre></td></tr></table></figure>
+<h2 id="1-2-函数方法-1"><a href="#1-2-函数方法-1" class="headerlink" title="1.2 函数方法"></a>1.2 函数方法</h2><p>插入</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cpp">ss.<span class="hljs-built_in">push_back</span>(ele);<span class="hljs-comment">//字符串尾部加元素</span><br>ss.<span class="hljs-built_in">insert</span>(pos,ele);<span class="hljs-comment">//在pos位置添加元素</span><br>ss.<span class="hljs-built_in">append</span>(str)<span class="hljs-comment">//尾部添加字符串</span><br></code></pre></td></tr></table></figure>
+<p>长度</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs cpp">ss.<span class="hljs-built_in">size</span>()  ss.<span class="hljs-built_in">length</span>()<br>ss.<span class="hljs-built_in">max_size</span>()<br></code></pre></td></tr></table></figure>
 <h2 id="1-3-stirng的读入"><a href="#1-3-stirng的读入" class="headerlink" title="1.3 stirng的读入"></a>1.3 stirng的读入</h2><p>这里让我想到机考的时候字符串没处理换行符导致的bug</p>
-<pre><code class="cpp">#include&lt;string&gt;
-int main()
-&#123;
-  int n;
-  string ss;
-  cin&gt;&gt;n;
-  getchar();
-  ios::sync_with_stdio(false);
-cin.tie(0),cout.tie(0);
-&#125;
-写牛魔酬宾
-
-</code></pre>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>  <span class="hljs-type">int</span> n;<br>  string ss;<br>  cin&gt;&gt;n;<br>  <span class="hljs-built_in">getchar</span>();<br>  ios::<span class="hljs-built_in">sync_with_stdio</span>(<span class="hljs-literal">false</span>);<br>cin.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>),cout.<span class="hljs-built_in">tie</span>(<span class="hljs-number">0</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="5-map映射"><a href="#5-map映射" class="headerlink" title="5 map映射"></a>5 map映射</h1><h2 id="5-1-介绍"><a href="#5-1-介绍" class="headerlink" title="5.1 介绍"></a>5.1 介绍</h2><p>map类似映射，在做leetcode题时用unordered_map表示哈希表？<br>定义</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;map&gt;</span></span><br>map&lt;string,<span class="hljs-type">int</span>&gt;ss;<br>map&lt;<span class="hljs-type">int</span>,<span class="hljs-type">int</span>&gt;ss;<br>map&lt;string,node&gt;ss;<span class="hljs-comment">//node是结构体</span><br></code></pre></td></tr></table></figure>
+<p>map特性：map会按照键的顺序从小到大自动排序，键的类型必须可以比较大小<br>好像map可以用来表示二维数组</p>
+<h2 id="5-2-方法"><a href="#5-2-方法" class="headerlink" title="5.2 方法"></a>5.2 方法</h2><h1 id="6-pair"><a href="#6-pair" class="headerlink" title="6 pair"></a>6 pair</h1><p>好像记错pair和map了</p>
 
                 
               </div>
