@@ -4,13 +4,25 @@
   
   
   <entry>
-    <title></title>
+    <title>pytorch学习笔记</title>
     <link href="/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <url>/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>it is just my personal learning notes</p><span id="more"></span><p>入坑一下</p><h1 id="1-基本数据结构"><a href="#1-基本数据结构" class="headerlink" title="1. 基本数据结构"></a>1. 基本数据结构</h1><p>网上教程实在是杂乱无章<br><a href="https://wiki.python.org/moin/NumPy">numpy</a></p>]]></content>
     
     
+    <categories>
+      
+      <category>编程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>语言</tag>
+      
+    </tags>
     
   </entry>
   
