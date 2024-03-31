@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>技术文档修改版</title>
+    <link href="/2024/03/31/icpc/"/>
+    <url>/2024/03/31/icpc/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>算法</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>算法</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>pytorch学习笔记</title>
     <link href="/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <url>/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
@@ -33,7 +58,7 @@
     <link href="/2024/03/22/java%E8%BF%9B%E9%98%B6/"/>
     <url>/2024/03/22/java%E8%BF%9B%E9%98%B6/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><h2 id="面向对象详解"><a href="#面向对象详解" class="headerlink" title="面向对象详解"></a>面向对象详解</h2><p>借鉴菜鸟教程，一个宝藏教程</p><h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2>]]></content>
     
     
     <categories>
@@ -48,19 +73,6 @@
       <tag>语言</tag>
       
     </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title></title>
-    <link href="/2024/03/09/test/"/>
-    <url>/2024/03/09/test/</url>
-    
-    <content type="html"><![CDATA[<h1 id="cpp重载练习"><a href="#cpp重载练习" class="headerlink" title="cpp重载练习"></a>cpp重载练习</h1>]]></content>
-    
-    
     
   </entry>
   
