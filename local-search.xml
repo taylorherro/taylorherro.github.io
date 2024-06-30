@@ -4,6 +4,32 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/04/02/mysql/"/>
+    <url>/2024/04/02/mysql/</url>
+    
+    <content type="html"><![CDATA[<h1 id="mysql的安装"><a href="#mysql的安装" class="headerlink" title="mysql的安装"></a>mysql的安装</h1>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2024/03/31/acm/icpc/ccpc/cccc/"/>
+    <url>/2024/03/31/acm/icpc/ccpc/cccc/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>技术文档修改版</title>
     <link href="/2024/03/31/icpc/"/>
     <url>/2024/03/31/icpc/</url>
@@ -58,7 +84,7 @@
     <link href="/2024/03/22/java%E8%BF%9B%E9%98%B6/"/>
     <url>/2024/03/22/java%E8%BF%9B%E9%98%B6/</url>
     
-    <content type="html"><![CDATA[<span id="more"></span><h2 id="面向对象详解"><a href="#面向对象详解" class="headerlink" title="面向对象详解"></a>面向对象详解</h2><p>借鉴菜鸟教程，一个宝藏教程</p><h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><h2 id="面向对象详解"><a href="#面向对象详解" class="headerlink" title="面向对象详解"></a>面向对象详解</h2><p>借鉴菜鸟教程，一个宝藏教程</p><h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2><p>对象是类的一个实例，它具有状态和行为<br>类是一个模版，它定义一类对象  </p><pre><code class="java">public class dog &#123;  string name;  int size;  String color;  int age;  void run&#123;  &#125;  void eat&#123;  &#125;  void sleep&#123;      &#125;&#125;## 2.java数据结构</code></pre>]]></content>
     
     
     <categories>
@@ -73,6 +99,19 @@
       <tag>语言</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2024/03/09/test/"/>
+    <url>/2024/03/09/test/</url>
+    
+    <content type="html"><![CDATA[<h1 id="cpp重载练习"><a href="#cpp重载练习" class="headerlink" title="cpp重载练习"></a>cpp重载练习</h1>]]></content>
+    
+    
     
   </entry>
   
