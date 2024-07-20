@@ -16,22 +16,24 @@
   <meta name="author" content="difu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="it is just my personal learning notes">
+    <meta name="description" content="面向对象详解借鉴java核心技术，一个宝藏教程 1.类和对象对象是类的一个实例，它具有状态和行为类是一个模版，它定义一类对象   123456789101112131415public class dog &#123;  string name;  int size;  String color;  int age;  void run&#123;  &#125;  void eat&#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pytorch学习笔记">
-<meta property="og:url" content="http://www.difu101.top/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:title" content="java进阶面向对象">
+<meta property="og:url" content="http://www.difu101.top/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1[%E4%B8%80]/index.html">
 <meta property="og:site_name" content="difu101">
-<meta property="og:description" content="it is just my personal learning notes">
+<meta property="og:description" content="面向对象详解借鉴java核心技术，一个宝藏教程 1.类和对象对象是类的一个实例，它具有状态和行为类是一个模版，它定义一类对象   123456789101112131415public class dog &#123;  string name;  int size;  String color;  int age;  void run&#123;  &#125;  void eat&#123;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-25T11:35:45.000Z">
-<meta property="article:modified_time" content="2024-03-25T15:32:33.474Z">
+<meta property="og:image" content="http://www.difu101.top/source/img/Java.png">
+<meta property="article:published_time" content="2024-03-22T11:35:45.000Z">
+<meta property="article:modified_time" content="2024-07-07T06:45:01.809Z">
 <meta property="article:author" content="difu">
 <meta property="article:tag" content="语言">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://www.difu101.top/source/img/Java.png">
   
   
   
-  <title>pytorch学习笔记 - difu101</title>
+  <title>java进阶面向对象 - difu101</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +199,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="pytorch学习笔记"></span>
+            <span id="subtitle" data-typed-text="java进阶面向对象"></span>
           
         </div>
 
@@ -213,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-03-25 19:35" pubdate>
-          2024年3月25日 晚上
+        <time datetime="2024-03-22 19:35" pubdate>
+          2024年3月22日 晚上
         </time>
       </span>
     
@@ -225,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          23 字
+          76 字
         
       </span>
     
@@ -286,16 +288,17 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">pytorch学习笔记</h1>
+            <h1 id="seo-header">java进阶面向对象</h1>
             
             
               <div class="markdown-body">
                 
-                <p>it is just my personal learning notes</p>
-<span id="more"></span>
-<p>入坑一下</p>
-<h1 id="1-基本数据结构"><a href="#1-基本数据结构" class="headerlink" title="1. 基本数据结构"></a>1. 基本数据结构</h1><p>网上教程实在是杂乱无章<br><a target="_blank" rel="noopener" href="https://wiki.python.org/moin/NumPy">numpy</a></p>
-
+                <span id="more"></span>
+<h2 id="面向对象详解"><a href="#面向对象详解" class="headerlink" title="面向对象详解"></a>面向对象详解</h2><p>借鉴java核心技术，一个宝藏教程</p>
+<h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2><p>对象是类的一个实例，它具有状态和行为<br>类是一个模版，它定义一类对象  </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">dog</span> &#123;<br>  string name;<br>  <span class="hljs-type">int</span> size;<br>  String color;<br>  <span class="hljs-type">int</span> age;<br>  <span class="hljs-keyword">void</span> run&#123;<br><br>  &#125;<br>  <span class="hljs-keyword">void</span> eat&#123;<br><br>  &#125;<br>  <span class="hljs-keyword">void</span> sleep&#123;<br>    <br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p><img src="/source/img/Java.png" srcset="/img/loading.gif" lazyload alt="插图" title="Magic Gardens"></p>
+<h2 id="2-java数据结构"><a href="#2-java数据结构" class="headerlink" title="2.java数据结构"></a>2.java数据结构</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>
                 
               </div>
             
@@ -313,7 +316,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E7%BC%96%E7%A8%8B/" class="category-chain-item">编程</a>
+  <a href="/categories/java-%E7%BC%96%E7%A8%8B/" class="category-chain-item">-java -编程</a>
   
   
 
@@ -340,8 +343,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>pytorch学习笔记</div>
-      <div>http://www.difu101.top/2024/03/25/pytorch学习笔记/</div>
+      <div>java进阶面向对象</div>
+      <div>http://www.difu101.top/2024/03/22/java面向对象[一]/</div>
     </div>
     <div class="license-meta">
       
@@ -353,7 +356,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年3月25日</div>
+          <div>2024年3月22日</div>
         </div>
       
       
@@ -385,9 +388,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/03/31/acm/icpc/ccpc/cccc/" title="">
+                      <a href="/2024/03/25/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="pytorch学习笔记">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile"></span>
+                        <span class="hidden-mobile">pytorch学习笔记</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -395,8 +398,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%5B%E4%B8%80%5D/" title="java进阶面向对象">
-                        <span class="hidden-mobile">java进阶面向对象</span>
+                      <a href="/2024/03/21/%E5%A4%8D%E8%AF%95%E7%9B%B8%E5%85%B3/" title="西电软工复试">
+                        <span class="hidden-mobile">西电软工复试</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

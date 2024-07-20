@@ -4,6 +4,69 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2024/07/20/jdbc%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2024/07/20/jdbc%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java进阶2</title>
+    <link href="/2024/07/16/java%E8%BF%9B%E9%98%B62/"/>
+    <url>/2024/07/16/java%E8%BF%9B%E9%98%B62/</url>
+    
+    <content type="html"><![CDATA[<h1 id="java进阶"><a href="#java进阶" class="headerlink" title="java进阶"></a><strong>java进阶</strong></h1><p>接口与抽象类辨析</p><h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">Animal</span> &#123;<br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">makeSound</span><span class="hljs-params">()</span>; <span class="hljs-comment">// 抽象方法，隐式public abstract</span><br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">sleep</span><span class="hljs-params">()</span>; <span class="hljs-comment">// 抽象方法</span><br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">Animal</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">makeSound</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Bark&quot;</span>);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">sleep</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Sleeping...&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>抽象类</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Animal</span> &#123;<br>    <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">makeSound</span><span class="hljs-params">()</span>; <span class="hljs-comment">// 抽象方法</span><br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">sleep</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Sleeping...&quot;</span>);<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Animal</span> &#123;<br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">makeSound</span><span class="hljs-params">()</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Bark&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>-java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>编程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>javaweb</title>
+    <link href="/2024/07/14/javaweb/"/>
+    <url>/2024/07/14/javaweb/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>javaweb</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>mysql学习路线1</title>
     <link href="/2024/07/11/mysql%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF1/"/>
     <url>/2024/07/11/mysql%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF1/</url>
@@ -93,8 +156,8 @@
   
   <entry>
     <title>java进阶面向对象</title>
-    <link href="/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    <url>/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+    <link href="/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%5B%E4%B8%80%5D/"/>
+    <url>/2024/03/22/java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%5B%E4%B8%80%5D/</url>
     
     <content type="html"><![CDATA[<span id="more"></span><h2 id="面向对象详解"><a href="#面向对象详解" class="headerlink" title="面向对象详解"></a>面向对象详解</h2><p>借鉴java核心技术，一个宝藏教程</p><h2 id="1-类和对象"><a href="#1-类和对象" class="headerlink" title="1.类和对象"></a>1.类和对象</h2><p>对象是类的一个实例，它具有状态和行为<br>类是一个模版，它定义一类对象  </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">dog</span> &#123;<br>  string name;<br>  <span class="hljs-type">int</span> size;<br>  String color;<br>  <span class="hljs-type">int</span> age;<br>  <span class="hljs-keyword">void</span> run&#123;<br><br>  &#125;<br>  <span class="hljs-keyword">void</span> eat&#123;<br><br>  &#125;<br>  <span class="hljs-keyword">void</span> sleep&#123;<br>    <br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p><img src="/source/img/Java.png" alt="插图" title="Magic Gardens"></p><h2 id="2-java数据结构"><a href="#2-java数据结构" class="headerlink" title="2.java数据结构"></a>2.java数据结构</h2><h2 id="3"><a href="#3" class="headerlink" title="3."></a>3.</h2>]]></content>
     
@@ -143,8 +206,8 @@
   
   <entry>
     <title>java笔记汇总</title>
-    <link href="/2024/03/08/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%B1%87%E6%80%BB/"/>
-    <url>/2024/03/08/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%B1%87%E6%80%BB/</url>
+    <link href="/2024/03/08/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%88%9D%E7%BA%A7/"/>
+    <url>/2024/03/08/java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E5%88%9D%E7%BA%A7/</url>
     
     <content type="html"><![CDATA[<h2 id="it-is-just-my-personal-learning-notes-1序言回想自从系统学完C语言后，很少在系统学一门编程语言，python听得时候天天摆烂，以至于学完了还是一团浆糊，直到大二开始在leetcode刷题才有所深入了解，看来学习还是得付诸于时间才行。正好这段时间在经营博客，有事没事往上面扔点东西，挺好的"><a href="#it-is-just-my-personal-learning-notes-1序言回想自从系统学完C语言后，很少在系统学一门编程语言，python听得时候天天摆烂，以至于学完了还是一团浆糊，直到大二开始在leetcode刷题才有所深入了解，看来学习还是得付诸于时间才行。正好这段时间在经营博客，有事没事往上面扔点东西，挺好的" class="headerlink" title="it is just my personal learning notes# 1序言回想自从系统学完C语言后，很少在系统学一门编程语言，python听得时候天天摆烂，以至于学完了还是一团浆糊，直到大二开始在leetcode刷题才有所深入了解，看来学习还是得付诸于时间才行。正好这段时间在经营博客，有事没事往上面扔点东西，挺好的  "></a>it is just my personal learning notes<br><span id="more"></span><br># 1序言<br>回想自从系统学完C语言后，很少在系统学一门编程语言，python听得时候天天摆烂，以至于学完了还是一团浆糊，直到大二开始在leetcode刷题才有所深入了解，看来学习还是得付诸于时间才行。<br>正好这段时间在经营博客，有事没事往上面扔点东西，挺好的  </h2><!-- toc --><h1 id="2-java基本内容"><a href="#2-java基本内容" class="headerlink" title="2 java基本内容"></a>2 java基本内容</h1><h2 id="2-1-简介"><a href="#2-1-简介" class="headerlink" title="2.1 简介"></a>2.1 简介</h2><p>官方白皮书给出了如下关键字：简单性（接近C++）、面向对象（支持多重继承）、分布式、健壮性（优秀的指针模型）、安全性（复杂的安全模型）、体系结构中立（Java虚拟机）、可移植性（众多平台独立的Java库）、解释型（轻量的编译过程）、高性能（即时编译器）、多线程、动态性。</p><h2 id="2-2-java的程序结构"><a href="#2-2-java的程序结构" class="headerlink" title="2.2 java的程序结构"></a>2.2 java的程序结构</h2><p>java程序是以类为单位的，类则是一种自定义数据结构（类似于C中的结构体struct）。上面的程序包含了一个public类型的class（类），Hello是这个类的类名，这名称需和文件名同名。和C语言一样，Java也是大小写敏感的。习惯上将类名的每个单词首字母大写。  </p><p>这个类中包含了一个main方法（也就是函数），作为这个Java程序的运行起点。这个方法中包含了该程序的所有逻辑，和C非常相似。</p><h2 id="2-3数据类型"><a href="#2-3数据类型" class="headerlink" title="2.3数据类型"></a>2.3数据类型</h2><p>java跟c&#x2F;c++一样，数据元素有不同的数据类型<br>整型:byte(1字节),short(2个字节),int(4个字节),long(8个字节)<br>浮点类型:float(4字节),double(8字节)<br>字符类型 char<br>布尔类型 boolean  </p><h2 id="2-4输入输出"><a href="#2-4输入输出" class="headerlink" title="2.4输入输出"></a>2.4输入输出</h2><p>这点我认为java比较繁琐<br>首先头文件</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.Scanner;<br></code></pre></td></tr></table></figure><p>输入输出  </p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">Scanner</span> <span class="hljs-variable">in</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);<br>System.out.println(in.nextInt());<br>System.out.println(in.nextLine());<br></code></pre></td></tr></table></figure><h2 id="2-5-流程控制"><a href="#2-5-流程控制" class="headerlink" title="2.5 流程控制"></a>2.5 流程控制</h2><p>流程控制<br>Java中也有块（block）的概念。大多数内容都和C一致，除了嵌套的块中不能声明重名变量。下面说一下流程控制语句：  </p><p>if-else if-else 和C一样<br>while&#x2F;do-while 和C一样<br>for 和C一样。不过添加了一种for each循环<br>switch 和C一样。不过从Java SE 7 开始，case标签可以是字符串字面量<br>break 后面可以带标签，用法和C中的goto一样。不过只能跳出语句块而不能跳入<br>continue 和C一样  </p><h2 id="2-6-高精度算法-大数值"><a href="#2-6-高精度算法-大数值" class="headerlink" title="2.6 高精度算法(大数值)"></a>2.6 高精度算法(大数值)</h2><p>这个是一个可以说说的话题，还记着我大一下有门程序设计课，大作业就是完成各种常见的数据结构，其中就有一个高精度算法的C语言实现，但当时gpt水水就完事了，内在逻辑一点不清楚，看acwing的时候，惊奇听人说python一行就完事儿。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())*<span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>()))<br></code></pre></td></tr></table></figure><p>注意这里是分行输入 看来以后还得写篇python<br>而java的实现</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">BigInterger</span> <span class="hljs-variable">a</span> <span class="hljs-operator">=</span> BigInterger.valueOf(<span class="hljs-number">100</span>);<br></code></pre></td></tr></table></figure><h2 id="2-7-数组"><a href="#2-7-数组" class="headerlink" title="2.7 数组"></a>2.7 数组</h2><p>这个东西还挺烦人，刚学的时候一直记不住</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-type">int</span> []ss = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span> [<span class="hljs-number">100</span>]<span class="hljs-comment">//和cpp不一样的是，[]在前面写着</span><br><span class="hljs-type">int</span> []ss = &#123;<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>&#125;;<br>a = &#123;<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>&#125;;<br></code></pre></td></tr></table></figure>]]></content>
     
