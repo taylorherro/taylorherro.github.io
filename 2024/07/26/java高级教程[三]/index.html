@@ -24,7 +24,7 @@
 <meta property="og:description" content="一、java里的集合Collection集合的特点List系列1、可重复，有序，有索引；Set系列1、HashSet2 LinkHashSet3 TreeSet   Collection集合的遍历方式：for循环iteator迭代器123456789101112131415public class TestSuperSub &#123;    public static void main(S">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-26T11:35:45.000Z">
-<meta property="article:modified_time" content="2024-07-30T13:30:24.473Z">
+<meta property="article:modified_time" content="2024-08-05T08:42:19.485Z">
 <meta property="article:author" content="difu">
 <meta property="article:tag" content="语言">
 <meta name="twitter:card" content="summary_large_image">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          123 字
+          148 字
         
       </span>
     
@@ -295,7 +295,8 @@
 
 <h3 id="一、java里的集合"><a href="#一、java里的集合" class="headerlink" title="一、java里的集合"></a>一、java里的集合</h3><p>Collection集合的特点<br>List系列<br>1、可重复，有序，有索引；<br>Set系列<br>1、HashSet<br>2 LinkHashSet<br>3 TreeSet  </p>
 <h3 id="Collection集合的遍历方式："><a href="#Collection集合的遍历方式：" class="headerlink" title="Collection集合的遍历方式："></a>Collection集合的遍历方式：</h3><h2 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h2><h2 id="iteator迭代器"><a href="#iteator迭代器" class="headerlink" title="iteator迭代器"></a>iteator迭代器</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestSuperSub</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        ArrayList&lt;String&gt;c = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();<br>        c.add(<span class="hljs-string">&quot;a&quot;</span>);<br>        c.add(<span class="hljs-string">&quot;b&quot;</span>);<br>        c.add(<span class="hljs-string">&quot;c&quot;</span>);<br>        c.add(<span class="hljs-string">&quot;d&quot;</span>);<br>        Iterator&lt;String&gt; it = c.iterator();<br>        System.out.println(it.next());<br>        System.out.println(it.next());<br>        System.out.println(it.next());<br>        System.out.println(it.next());<br>        System.out.println(it.next());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-<h2 id="Lamda表达式"><a href="#Lamda表达式" class="headerlink" title="Lamda表达式"></a>Lamda表达式</h2><h3 id="二、I-O流"><a href="#二、I-O流" class="headerlink" title="二、I&#x2F;O流"></a>二、I&#x2F;O流</h3><h3 id="三、多线程"><a href="#三、多线程" class="headerlink" title="三、多线程"></a>三、多线程</h3><h3 id="四、网络编程"><a href="#四、网络编程" class="headerlink" title="四、网络编程"></a>四、网络编程</h3>
+<h2 id="Lamda表达式"><a href="#Lamda表达式" class="headerlink" title="Lamda表达式"></a>Lamda表达式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs java">c.forEach(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Consumer</span>&lt;String&gt;() &#123;<br>      <span class="hljs-meta">@Override</span><br>      <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">accept</span><span class="hljs-params">(String s)</span> &#123;<br>      System.out.println(s);<br>       &#125;<br>&#125;);<br>c.forEach((String s) -&gt; &#123;<br>    System.out.println(s);<br>&#125;);<br></code></pre></td></tr></table></figure>
+<h3 id="二、I-O流"><a href="#二、I-O流" class="headerlink" title="二、I&#x2F;O流"></a>二、I&#x2F;O流</h3><h3 id="三、多线程"><a href="#三、多线程" class="headerlink" title="三、多线程"></a>三、多线程</h3><h3 id="四、网络编程"><a href="#四、网络编程" class="headerlink" title="四、网络编程"></a>四、网络编程</h3>
                 
               </div>
             

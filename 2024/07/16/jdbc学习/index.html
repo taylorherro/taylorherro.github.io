@@ -16,15 +16,15 @@
   <meta name="author" content="difu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="JDBC理解学习与实现java database connectivity 1">
+    <meta name="description" content="JDBC理解学习与实现java database connectivity 1 java连接数据库JDBC（Java Database Connectivity）是Java提供的用于连接和操作关系数据库的API。JDBC使得Java程序可以与各种数据库系统（如MySQL、Oracle、SQL Server等）进行交互，从而实现数据的存储、查询、更新和删除操作。 2、jdbc连接的apiDriver">
 <meta property="og:type" content="article">
 <meta property="og:title" content="jdbc">
 <meta property="og:url" content="http://www.difu101.top/2024/07/16/jdbc%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="difu101">
-<meta property="og:description" content="JDBC理解学习与实现java database connectivity 1">
+<meta property="og:description" content="JDBC理解学习与实现java database connectivity 1 java连接数据库JDBC（Java Database Connectivity）是Java提供的用于连接和操作关系数据库的API。JDBC使得Java程序可以与各种数据库系统（如MySQL、Oracle、SQL Server等）进行交互，从而实现数据的存储、查询、更新和删除操作。 2、jdbc连接的apiDriver">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-07-16T10:15:05.000Z">
-<meta property="article:modified_time" content="2024-07-20T13:59:13.678Z">
+<meta property="article:modified_time" content="2024-08-05T14:28:52.072Z">
 <meta property="article:author" content="difu">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -225,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8 字
+          342 字
         
       </span>
     
@@ -236,7 +236,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -292,7 +292,13 @@
               <div class="markdown-body">
                 
                 <h1 id="JDBC理解学习与实现"><a href="#JDBC理解学习与实现" class="headerlink" title="JDBC理解学习与实现"></a>JDBC理解学习与实现</h1><p><strong>java database connectivity</strong></p>
-<h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3>
+<h3 id="1-java连接数据库"><a href="#1-java连接数据库" class="headerlink" title="1 java连接数据库"></a>1 java连接数据库</h3><p>JDBC（Java Database Connectivity）是Java提供的用于连接和操作关系数据库的API。JDBC使得Java程序可以与各种数据库系统（如MySQL、Oracle、SQL Server等）进行交互，从而实现数据的存储、查询、更新和删除操作。</p>
+<h3 id="2、jdbc连接的api"><a href="#2、jdbc连接的api" class="headerlink" title="2、jdbc连接的api"></a>2、jdbc连接的api</h3><p>DriverManager<br>Connection  </p>
+<h4 id="sql注入攻击"><a href="#sql注入攻击" class="headerlink" title="sql注入攻击"></a>sql注入攻击</h4><p>是指在使用statement接口的时候，sql骚操作获取全部信息；  </p>
+<h4 id="preparedStatement预防sql攻击"><a href="#preparedStatement预防sql攻击" class="headerlink" title="preparedStatement预防sql攻击"></a>preparedStatement预防sql攻击</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> jdbc_advance;<br><br><span class="hljs-keyword">import</span> org.junit.Test;<br><br><span class="hljs-keyword">import</span> java.sql.*;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Prepared_demo1</span> &#123;<br>    <span class="hljs-meta">@Test</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">testQuerySingleRomAndCol</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>        <span class="hljs-comment">//注册驱动</span><br><br>        <span class="hljs-type">Connection</span> <span class="hljs-variable">connection</span> <span class="hljs-operator">=</span> DriverManager.getConnection(<span class="hljs-string">&quot;jdbc:mysql://localhost:3306/atguigu?useSSL=false&amp;serverTimezone=UTC&quot;</span>,<span class="hljs-string">&quot;root&quot;</span>,<span class="hljs-string">&quot;fanTC357&quot;</span>);<br>        <span class="hljs-type">PreparedStatement</span> <span class="hljs-variable">preparedStatement</span> <span class="hljs-operator">=</span> connection.prepareStatement(<span class="hljs-string">&quot;select COUNT(*) as count from t_emp&quot;</span>);<br>        <span class="hljs-type">ResultSet</span> <span class="hljs-variable">resultSet</span> <span class="hljs-operator">=</span> preparedStatement.executeQuery();<br>        <span class="hljs-keyword">while</span> (resultSet.next()) &#123;<br>        <span class="hljs-type">int</span> count=resultSet.getInt(<span class="hljs-string">&quot;count&quot;</span>);<br>        System.out.println(count);<br>        &#125;<br>        resultSet.close();<br>        preparedStatement.close();<br>        connection.close();<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="3、jdbc连接流程实例"><a href="#3、jdbc连接流程实例" class="headerlink" title="3、jdbc连接流程实例"></a>3、jdbc连接流程实例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">package</span> com.atguigu.base;<br><br><span class="hljs-keyword">import</span> java.sql.*;<br><span class="hljs-keyword">import</span> java.util.Scanner;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">jdbc_demo2</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception&#123;<br>        <span class="hljs-comment">//注册驱动</span><br>        <span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;jdbc:mysql://localhost:3306/atguigu?useSSL=false&amp;serverTimezone=UTC&quot;</span>;<br>        String user=<span class="hljs-string">&quot;root&quot;</span>;<br>        String password=<span class="hljs-string">&quot;******&quot;</span>;<br>        <span class="hljs-comment">//获得连接</span><br>        Connection conn=DriverManager.getConnection(url,user,password);<br>        <span class="hljs-comment">//sql语句编写</span><br>        Statement stmt=conn.createStatement();<br><br>        System.out.println(<span class="hljs-string">&quot;请输入一个名字&quot;</span>);<br>        Scanner sc=<span class="hljs-keyword">new</span> <span class="hljs-title class_">Scanner</span>(System.in);<br>        String name=sc.nextLine();<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;SELECT emp_id,emp_name,emp_salary FROM t_emp WHERE emp_name=&#x27;&quot;</span>+name+<span class="hljs-string">&quot;&#x27;&quot;</span>;<br>        <span class="hljs-type">ResultSet</span> <span class="hljs-variable">rs</span> <span class="hljs-operator">=</span> stmt.executeQuery(sql);<br><br>        <span class="hljs-comment">// 4. 处理结果集</span><br>        <span class="hljs-keyword">while</span> (rs.next()) &#123;<br>            <span class="hljs-type">int</span> <span class="hljs-variable">empId</span> <span class="hljs-operator">=</span> rs.getInt(<span class="hljs-string">&quot;emp_id&quot;</span>);<br>            <span class="hljs-type">String</span> <span class="hljs-variable">empName</span> <span class="hljs-operator">=</span> rs.getString(<span class="hljs-string">&quot;emp_name&quot;</span>);<br>            <span class="hljs-type">double</span> <span class="hljs-variable">empSalary</span> <span class="hljs-operator">=</span> rs.getDouble(<span class="hljs-string">&quot;emp_Salary&quot;</span>);<br><span class="hljs-comment">//            int empAge = rs.getInt(&quot;emp_Age&quot;);不区分大小写</span><br>            System.out.println(empId + <span class="hljs-string">&quot;\t&quot;</span> + empName + <span class="hljs-string">&quot;\t&quot;</span> + empSalary + <span class="hljs-string">&quot;\t&quot;</span> );<br>        &#125;<br><br>        <span class="hljs-comment">// 5. 关闭资源</span><br>        rs.close();<br>        stmt.close();<br>        conn.close();<br><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
                 
               </div>
             
